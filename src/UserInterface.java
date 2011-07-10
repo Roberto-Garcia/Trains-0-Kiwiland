@@ -1,30 +1,42 @@
-import com.sun.xml.internal.ws.wsdl.writer.document.Message;
+import java.util.Scanner;
 
-/**
- * Created by IntelliJ IDEA.
- * User: Thoughtworks
- * Date: 7/10/11
- * Time: 12:44 PM
- * To change this template use File | Settings | File Templates.
- */
 public class UserInterface {
+
+    private String fileName;
 
     public UserInterface(){
 
     }
 
     public void start(){
-        printWelcomeMessage();
+        printMessage(welcomeMessage());
+
+       // NodeCreator creator=new NodeCreator(FileHandler inFile = new FileHandler(fileName));
+
+
     }
+
+    public void handleUsersResponse(){
+        Scanner scan =new Scanner(System.in);
+        fileName=scan.next();
+
+    }
+
 
     public String welcomeMessage(){
-        String outMessage;
-        outMessage="Welcome to Trains-0-Kiwiland" ;
-        return outMessage;
+        String message="Welcome to Trains-0-Kiwiland" ;
+        return message;
     }
 
-    public void printWelcomeMessage(){
-        System.out.println(welcomeMessage());
+    public String optionMessage(){
+        String message ="";
+        return  message;
+
     }
+
+    public void printMessage(String Message){
+        System.out.print(Message);
+    }
+
 
 }

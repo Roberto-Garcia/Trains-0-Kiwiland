@@ -1,13 +1,10 @@
-import junit.framework.TestCase;
-import org.junit.Before;
+
 import org.junit.Test;
 
-
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.junit.Assert.assertEquals;
 
 
-public class NodeTest extends TestCase {
+public class NodeTest {
 
 
     @Test
